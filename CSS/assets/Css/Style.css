@@ -1,0 +1,9 @@
+a{
+    background-color: #0dcaf0;
+    font-size: 50px;
+    font-family: KDOLU;
+}
+
+a:hover{
+    background-color: red;
+}

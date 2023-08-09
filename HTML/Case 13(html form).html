@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 13</title>
+<!--  <link rel="stylesheet" href="sample.css">-->
+</head>
+<body>
+  <button class="styled" type="button">Sample button</button><br><br>
+
+
+    <label for="food-list">choose food one <br></label><br>
+
+    <input list="ice-cream-flavors" id="food-list" name="ice cream-choise">
+
+  <datalist id="ice-cream-flavors">
+      <option value="Chocolate">
+      <option value="Coconut">
+      <option value="Mint">
+      <option value="Strawberry">
+      <option value="Vanilla">
+  </datalist> <br><br>
+
+    <input type="time" list="time-list" />
+
+    <datalist id="time-list">
+        <option value="12:00"></option>
+        <option value="13:00"></option>
+        <option value="14:00"></option>
+    </datalist><br><br>
+
+
+  <label for="tick">Tip amount:</label><br>
+  <input type="range" list="tickmarks" min="0" max="100" id="tick" name="tick" />
+  <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+  </datalist><br><br>
+
+  <label for="colors">Pick a color (preferably a red tone):</label>
+  <input type="color" list="redColors" id="colors" />
+
+  <datalist id="redColors">
+      <option value="#800000"></option>
+      <option value="#8B0000"></option>
+      <option value="#A52A2A"></option>
+      <option value="#DC143C"></option>
+  </datalist><br><br>
+
+  <label for="pwd">Enter a password:</label>
+  <input type="password" list="randomPassword" id="pwd" />
+  <datalist id="randomPassword">
+      <option value="5Mg[_3DnkgSu@!q#"></option>
+  </datalist><br><br>
+
+
+  <label>this is fieldset</label>
+
+    <form>
+<!--        used deseble attribute-->
+        <fieldset>
+            <legend>choose your path</legend>
+            <input type="radio" id="kraken" name="monster" value="K">
+            <label for="kraken">Kraken</label><br><br>
+
+            <label for="text">enter name</label><br>
+            <input type="text" id="text" name="name-text"><br><br>
+
+            <label for="this-is-button">click hear</label>
+            <button id="this-is-button">submit</button><br><br>
+
+            <label for="check-box">this is check-box</label>
+            <input type="checkbox" id="check-box" value="checked !">
+
+        </fieldset><br><br>
+
+        <progress value="70" max="100">70 %</progress><br><br>
+
+
+    </form>
+
+  <div aria-busy="true" aria-describedby="progress-bar">
+      <!-- content is for this region is loading -->
+  </div>
+
+  <!-- ... -->
+
+  <progress id="progress-bar" aria-label="Content loading…"></progress><br><br>
+
+  <label for="pet-select">Choose a pet:</label>
+
+
+<!--  select box-->
+  <select name="pets" id="pet-select">
+      <option value="">--Please choose an option--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish" selected>Goldfish</option>
+  </select><br><br>
+
+<!--text area-->
+        <label for="story">Tell us your story:</label><br>
+  <!--                  useed deseble-->
+        <textarea id="story" name="story"
+                rows="5" cols="33" disabled>
+        It was a dark and stormy night...
+        </textarea><br><br>
+
+
+  <textarea
+          name="textarea"
+          rows="5"
+          cols="30"
+          placeholder="Comment text."></textarea>
+
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="b" name="b" value="50" /> +
+      <input type="number" id="a" name="a" value="10" /> =
+      <output name="result" for="a b">60</output>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form action="">
+      <label for="name">U name</label>
+      <input type="text" id="name" required>
+
+      <label for="id">U Id</label>
+      <input type="text" id="id" required>
+
+      <button type="submit">submit</button>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+
+    <style>
+
+        /*Descendant combinator*/
+
+        section h1 {
+            color: red;
+            text-align: center;
+        }
+
+        /*Descendant combinator*/
+        /*combination usage*/
+
+        .con h1::first-letter{
+            color: #0a58ca;
+        }
+
+    </style>
+</head>
+<body>
+<h1>outer h1</h1>
+
+        <section class="con">
+            <h1>Im inner h1 !</h1>
+        </section>
+
+        <section>
+            <h1>Im h1 in section 2 !</h1>
+        </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,800&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>CSS Rules</title>
+    <style>
+        /*id selector*/
+        /*element selector*/
+        /*class selector*/
+        /*universal selector*/
+        /*attribute selector*/
+
+        /*h1 is type selector*/
+        h1{
+            color: red;
+        }
+
+        h1:hover{
+            color: #24dc8b;
+        }
+
+        h2{
+            color: green;
+            font-size: 40px;
+        }
+        h3{
+            /*border property's*/
+            border: 1px dashed #ca1010;
+            color: red;
+            text-align: center;
+        }
+        /*#h3Costom is id selector unique style adding !*/
+        #h3Costom{
+            font-family: 'PT Sans Narrow', sans-serif;
+        }
+        /*.custom is class selector*/
+        .custom{
+            color: green;
+            text-transform: capitalize;
+        }
+
+        .material-symbols-outlined{
+            color: #0a53be;
+            font-size: 15px;
+            width: 175px;
+            height: 50px;
+            border-radius: 15px;
+        }
+
+        button:hover{
+            background-color: #0a53be;
+            color: white;
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Change me to red</h1>
+<h1>Change me to red</h1>
+<h1>Change me to red</h1>
+<h2>Change me to green & set font size 40px</h2>
+<h2>Change me to green  & set font size 40px</h2>
+<h2>Change me to green  & set font size 40px</h2>
+
+<h3>Set me a red border</h3>
+<h3 id="h3Costom">Set me a red border & change the font to ubuntu</h3>
+
+<span class="material-symbols-outlined">
+airplanemode_active
+</span><br>
+
+<button class="material-symbols-outlined"> click me airplanemode_active</button>
+</body>
+</html>
