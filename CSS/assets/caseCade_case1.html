@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cascade Task Three</title>
+  <style>
+
+    /*03*/
+    body#body>section.mainClass#main>section>div+div>h1{
+      color: red;
+    }
+    /*02 24*/
+    body>section>section>div+div>h1{
+        color: deeppink;
+    }
+   /*01*/
+    body.bodyClass#body>section#main.mainClass>section.subClass#sub>div.firstDivClass#firstDiv+div#secondDiv.secondDivClass>h1#selectedH1.selectH1Class{
+      color: indigo;
+    }
+    /*02*/
+    body.bodyClass#body>section#main>section.subClass>div.firstDivClass+div#secondDiv>h1#selectedH1.selectH1Class{
+      color: skyblue;
+    }
+
+    #selectedH1{
+      color: magenta;
+    }
+
+
+
+
+
+  </style>
+</head>
+<body class="bodyClass" id="body">
+<section class="mainClass" id="main">
+  <section class="subClass" id="sub">
+    <div class="firstDivClass" id="firstDiv">
+
+    </div>
+    <div class="secondDivClass" id="secondDiv">
+      <h1 class="selectH1Class" id="selectedH1" style="color: green">Hello I am Here</h1>
+    </div>
+  </section>
+</section>
+
+</body>
+</html>
