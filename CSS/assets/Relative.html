@@ -3,18 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <style>
-    div{
-      height: 50vh;
-      width: 50vw;
-      background: #0dcaf0;
-    }
+    <style>
+        section>div{
 
-  </style>
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to left,#0dcaf0,#9ec5fe);
+            border-radius: 100%;
+
+
+        }
+
+        body>section>img:nth-child(1){
+            position: relative;
+            bottom: -17px
+        }
+        body>section>img:nth-child(2){
+            position: relative;
+            top: -10px;
+            bottom: 10px;
+
+        }
+        section+img{
+            position: absolute;
+            /*margin-left: 1350px;*/
+            /*margin-top: 350px;*/
+            right: 0px;
+            bottom: 0px;
+        }
+
+    </style>
 </head>
 <body>
-  <div>
 
-  </div>
+<section>
+    <img width="150" src="text/images/car.webp">
+    <img width="150" id="img" src="text/images/walk.gif">
+    <div>
+    </div>
+</section>
+<img id="img1" width="150" src="text/images/tree.gif">
 </body>
 </html>
