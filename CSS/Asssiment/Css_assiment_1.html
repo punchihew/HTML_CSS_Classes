@@ -3,40 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <style>
-        section{
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-        }
-        section:nth-child(1){
-            left: 0;
-            top: 0;
-            background-color: red;
-        }
-        section:nth-child(2){
-            right: 0;
-            top: 0;
-            background-color: orange;
-        }
-        section:nth-child(3){
-            left: 0;
-            bottom: 0;
-            background-color: green;
-        }
-        section:nth-child(4){
-            right: 0;
-            bottom: 0;
-            background-color: deeppink;
-        }
+            body >section{
+                width: 50vw;
+                height: 50vh;
+                position: absolute;
+            }
+
+
+            body > section:nth-child(1){
+                left: 0;
+                top: 0;
+                background: red;
+            }
+
+            body > section:nth-child(2){
+                background: orange;
+                bottom: 0;
+                left: 0;
+            }
+
+            body >section:nth-child(3){
+                top: 0;
+                right: 0;
+                background-color: green;
+            }
+
+            body>section:nth-child(4){
+                right: 0;
+                bottom: 0;
+                background-color: deeppink;
+            }
+
+        /*body > section > section {*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    border-radius: 200px;*/
+        /*    background: white;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+            body > section > section{
+               width: 200px;
+               height: 200px;
+               border-radius: 200px;
+               background-color: white;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                /*margin: auto;*/
+            }
+
+
+
+
+
+
 
     </style>
 </head>
 <body>
- <section></section>
- <section></section>
- <section></section>
- <section></section>
+ <section>
+     <section></section>
+ </section>
+
+ <section>
+     <section>
+
+     </section>
+ </section>
+
+ <section>
+     <section>
+
+     </section>
+ </section>
+
+ <section>
+     <section>
+     </section>
+ </section>
 
 </body>
 </html>
