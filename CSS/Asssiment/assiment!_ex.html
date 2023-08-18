@@ -5,32 +5,38 @@
     <title>Title</title>
     <style>
         body>section{
+            width: 100px;
+            height: 100px;
+            background: white;
+
+        }
+        body>section>section{
             width: 50vw;
             height: 50vh;
             position: absolute;
         }
 
-        body>section:nth-child(1){
+        body>section>section:nth-child(1){
             background: red;
             left: 0;
             top: 0;
         }
-        body>section:nth-child(2){
+        body>section>section:nth-child(2){
             right: 0;
             top: 0;
             background: orange;
         }
-        body>section:nth-child(3){
+        body>section>section:nth-child(3){
             bottom: 0;
             left: 0;
             background: green;
         }
-        body>section:nth-child(4){
+        body>section>section:nth-child(4){
             right: 0;
             bottom: 0;
             background: deeppink;
         }
-        body>section>section{
+        body>section>section>section{
             width: 200px;
             height: 200px;
             background: white;
@@ -42,7 +48,7 @@
             top: 0;
             margin: auto;
         }
-        body>section>section>div{
+        body>section>section>section>div{
             width: 100px;
             height: 100px;
             background: red;
@@ -54,7 +60,7 @@
             margin: auto;
         }
 
-        body >div:nth-child(5) {
+        body >section>div:nth-child(5) {
             width: 150px;
             height: 150px;
             background: white;
@@ -64,7 +70,7 @@
             margin: auto;
             border-bottom-right-radius: 100%;
         }
-        body >div:nth-child(6) {
+        body >section>div:nth-child(6) {
             width: 150px;
             height: 150px;
             background: white;
@@ -74,7 +80,7 @@
             margin: auto;
             border-bottom-left-radius: 100%;
         }
-        body >div:nth-child(7) {
+        body >section>div:nth-child(7) {
             width: 150px;
             height: 150px;
             background: white;
@@ -84,7 +90,7 @@
             margin: auto;
             border-top-right-radius: 100%;
         }
-        body >div:nth-child(8) {
+        body >section>div:nth-child(8) {
             width: 150px;
             height: 150px;
             background: white;
@@ -95,9 +101,23 @@
             border-top-left-radius: 100%;
         }
 
+        body>section>div>div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
     </style>
 </head>
 <body>
+<section>
   <section>
       <section>
           <div>
@@ -130,13 +150,12 @@
 
   </section>
 
+
   <div></div>
   <div></div>
   <div></div>
   <div></div>
 
-
-
-
+</section>
 </body>
 </html>
