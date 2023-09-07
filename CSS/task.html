@@ -16,6 +16,7 @@
       left: 0;
       right: 0;
       margin: auto;
+      z-index: 10;
     ;
     }
     header>ul>li{
@@ -41,6 +42,15 @@
       bottom: 0;
       margin: auto;
     }
+    body>section>div{
+      background-color: white;
+      height: 100px;
+      width: 100%;
+      z-index: 5;
+      position: fixed;
+      top: 0px;
+
+    }
 
     main{
       padding: 10px;
@@ -55,7 +65,10 @@
 
     }
     main>section:first-child>div:nth-child(1){
+      position:sticky;
+      top:300px;
       background-color: deeppink;
+
     }
     main>section:nth-child(2)>div:nth-child(1){
       background-color: lightskyblue;
@@ -73,9 +86,15 @@
     main>section>section>p{
       top: 14.5vh;
     }
+
   </style>
 </head>
 <body>
+<section>
+  <div>
+
+  </div>
+</section>
 <header>
   <ul>
     <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
@@ -83,9 +102,11 @@
     <li><i class="fa-sharp fa-solid fa-address-book"></i><a href="#">Contact</a></li>
     <li><i class="fa-solid fa-user"></i><a href="#">About us</a></li>
   </ul>
+
 </header>
 
 <main>
+
   <section>
     <div>
       <h1>Home<dfn id="Home"></dfn></h1>
