@@ -8,23 +8,27 @@
       text-align: center;
       color: red;
       animation-name: anima;
-      animation-duration: 2s;
-      animation-iteration-count: 5;
+      animation-duration: 5s;
+      animation-iteration-count: 4;
       position: relative;
+        animation-delay: 2s;
     }
     @keyframes anima {
-      from{
+      0%{
         color: deeppink;
         left: 0;
 
-
       }
-      to{
-        color: purple;
+      50%{
+        color: orange;
         left: 100px;
-        top: 100px;
 
       }
+       100%{
+            color: yellow;
+            left: 150px;
+
+        }
 
     }
   </style>
