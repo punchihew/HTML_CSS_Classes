@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
   <style>
     h1{
       text-align: center;
       color: red;
       animation-name: anima;
-      animation-duration: 5s;
+      animation-duration: 10s;
       animation-iteration-count: 4;
       position: relative;
-        animation-delay: 2s;
-        animation-fill-mode: backwards;
+      animation-delay: 2s;
     }
     @keyframes anima {
       0%{
         color: deeppink;
         left: 0;
+        font-size: 20px;
 
       }
       50%{
         color: orange;
-        left: 100px;
+        left: 80px;
+        font-size: 40px;
 
       }
-       100%{
-            color: yellow;
-            left: 150px;
+      60%{
+        color: darkblue;
+        left: 100px;
+        font-size: 60px;
 
-        }
+      }
+      100%{
+        color: yellow;
+        left: 120px;
+        font-size: 80px;
+
+      }
 
     }
   </style>
 </head>
 <body>
 <h1>
-Example Animation
+  Example Animation
 </h1>
 
 </body>
