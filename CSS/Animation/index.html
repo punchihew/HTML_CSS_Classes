@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animations</title>
+  <style>
+    h1{
+      color: red;
+      animation-name: anima;
+      animation-duration: 2s;
+      animation-iteration-count: 5;
+
+    }
+    @keyframes anima {
+      from{
+        color: deeppink;
+      }
+      to{
+        color: purple;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<h1>CSS Animations</h1>
+<p>CSS animations make it possible to animate transitions from one CSS style configuration to another.<br>
+  Animations consist of two components, a style describing the CSS animation and a set of keyframes
+  that indicate the start and end states of the animation's style, as well as possible intermediate
+  waypoints.</p>
+
+<ul>
+  <li>animation-name</li>
+  <li>animation-duration</li>
+  <li>animation-timing-function</li>
+  <li>animation-delay</li>
+  <li>animation-iteration-count</li>
+  <li>animation-direction
+    <ul>
+      <li>(reverse/alternate,alternate-reverse) (normal default)</li>
+    </ul>
+  </li>
+  <li>animation-fill-mode
+    <ul>
+      <li>(Configures what values are applied by the animation before and after it is executing.)</li>
+    </ul>
+  </li>
+  <li>animation-play-state</li>
+</ul>
+</body>
+</html>
