@@ -31,10 +31,27 @@
   //Create a list element
   //Add it to the Ordered List
 
-  document.querySelector('#btn').addEventListener("click",function (){
-   let type1 = document.querySelector('#txt').value;
-   let type2 = document.querySelector('#list').innerHTML=type1;
-  })
+  // my single work
+  // document.querySelector('#btn').addEventListener("click",function (){
+  //  let type1 = document.querySelector('#txt').value;
+  //  let type2 = document.querySelector('#list').innerHTML=type1;
+  // })
+
+
+  let btn=document.querySelector("#btn");
+  let ol=document.querySelector("#list");
+
+  btn.addEventListener("click",function (){
+    let typInp=document.querySelector("#txt").value;
+
+    //let's create new list item
+    let li=document.createElement("li");
+    li.setAttribute("class","list-group-item");
+    li.textContent=typInp;
+    ol.prepend(li);
+
+  });
+
 
 </script>
 </body>
