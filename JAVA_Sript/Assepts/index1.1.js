@@ -1,3 +1,1 @@
-<script>
-    al
-</script>
+alert("I am external");
