@@ -10,7 +10,7 @@
   <section class="row">
     <!--Case One-->
     <div class="col">
-      <h1>Hello There How are you.?</h1>
+      <h1 id="tp1">Hello There How are you.?</h1>
       <input id="txt" class="form-control" type="text" placeholder="Input Something">
       <button id="btn1" class="mt-2 btn btn-danger">Change Text</button>
     </div>
@@ -34,8 +34,7 @@
   //Change font size t0 4em
 
   document.querySelector('#txt').addEventListener("keyup",function (){
-
-
+    document.querySelector('#tp1').innerHTML=document.querySelector('#txt').value;
   });
 
   //     document.querySelector('#txt').addEventListener("keyup",function(){
