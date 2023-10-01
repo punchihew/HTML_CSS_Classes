@@ -33,21 +33,24 @@
   //Change the color of h1 to red
   //Change font size t0 4em
 
-  document.querySelector("#txt").addEventListener("keyup",function(){
-    document.querySelector("h1").innerText=document.querySelector('input').value;
+  document.querySelector("#btn1").addEventListener("click",function (){
+    document.querySelector("#cDis").style.color='red';
   });
 
-  //     document.querySelector('#txt').addEventListener("keyup",function(){
-  //     document.querySelector("h1").innerText=document.querySelector("input").value
+
+
+  //Case Two
+  //Bind an event for Change Image Btn
+  //Get Input URL Value
+  //Assign it to the Image src
+  document.querySelector('#btn2').addEventListener("click",function(){
+    document.querySelector('#img').style.backgroundImage = "url("+document.querySelector('#url').value+")";
+  });
+
+  // document.querySelector("#btn2").addEventListener("click",function (){
+  //     document.querySelector('#url').valueOf;
+  //     document.querySelector('#img').style.backgroundImage('#url')
   // });
-  document.querySelector('#btn1').addEventListener("click",function(){
-    document.querySelector("h1").style.color='red'
-  });
-
-
-</script>
-</body>
-</html>
 
 
 </script>
