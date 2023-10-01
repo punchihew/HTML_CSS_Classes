@@ -43,8 +43,10 @@
   });
 
   document.querySelector("#btn2").addEventListener('click',function(){
-    let type1 = document.querySelector("#url")
-    let type2 = document.querySelector("#url")
+    let type1 = document.querySelector("#url").value;
+    let type2 = document.querySelector("#img")
+
+    type2.style.backgroundImage =`url(${type1})`;
 
   });
 
