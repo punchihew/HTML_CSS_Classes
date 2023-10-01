@@ -29,8 +29,12 @@
 <script>
 
     let startBtn=document.querySelector("#btnStart");
+    let StopBtn=document.querySelector("#btnStop");
     let display=document.querySelector("#display");
+    let minus=document.querySelector("#btnMinus");
+    let Increment=document.querySelector("#btnIncrement");
 
+    let interval;
     startBtn.addEventListener("click",function (){
 
         setInterval(function(){
@@ -41,11 +45,15 @@
 
     });
 
-    let count=0;
-    setInterval(function(){
-        count+=1;
-        console.log(count);
-    },2000);
+    startBtn.addEventListener("click",function (){
+        clearInterval(interval);
+    });
+
+    // let count=0;
+    // setInterval(function(){
+    //     count+=1;
+    //     console.log(count);
+    // },2000);
 
 
 
