@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+  <link rel="stylesheet" href="../../HTML/assets/css/bootstrap.css">
+</head>
+<body>
+<section class="container mt-5">
+  <h1 id="h1ID">What is BOM & What is DOM</h1>
+  <h1 class="h1Class">What is BOM & What is DOM</h1>
+  <h2 id="h2ID">What really JS DO?</h2>
+  <h2 class="h1Class">What really JS DO?</h2>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eos esse eveniet harum magni maiores maxime optio provident quaerat quidem, quis vel. Accusamus consequuntur excepturi impedit sapiente temporibus voluptates!</p>
+  <input class="form-control" type="text" name="cusName">
+  <button class="btn btn-danger mt-3">Test</button>
+</section>
+
+
+<script>
+  document.querySelector("button").addEventListener("click",function (){
+    document.querySelector('#h2ID').innerHTML=document.querySelector('input').value;
+
+  });
+  document.querySelector("button").addEventListener("click",function (){
+    document.querySelector('#h2ID').style.color = 'yellow'
+
+  });
+</script>
+
+</body>
+</html>
