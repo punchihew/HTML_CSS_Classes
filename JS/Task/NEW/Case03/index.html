@@ -37,7 +37,7 @@
     let interval;
     startBtn.addEventListener("click",function (){
 
-        setInterval(function(){
+        interval = setInterval(function(){
             display.innerText=parseInt(display.innerText)+1;
             console.log(display);
         },600);
@@ -45,7 +45,7 @@
 
     });
 
-    startBtn.addEventListener("click",function (){
+    StopBtn.addEventListener("click",function (){
         clearInterval(interval);
     });
 
