@@ -3,14 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        main>section>div{
+            width: 200px;
+            height: 100px;
+        }
+        main>section{
+
+            display: flex;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        main>section>div:nth-child(1){
+            position: relative;
+            top: -14vh;
+        }
+        main>section>div:nth-child(2){
+
+        }
+        main>section>div:nth-child(3){
+
+        }
+        main>section>div:nth-child(4){
+
+        }
+        main>section>div:nth-child(5){
+
+            position: relative;
+            top: 14vh;
+        }
+
+
+    </style>
 </head>
 <body>
 <main>
-    <input id="txt" class="form-control" type="number" placeholder="Input a Number" value="0">
+    <section>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </section>
+
 </main>
 <script>
 
-</script>
+    let div = document.querySelectorAll("section>div");
+    let colurs = ["red","yellow","green","deeppink","orange"]
 
+    let i = 0
+
+    setInterval(function () {
+
+        for (let i = 0; i < colurs.length; i++) {
+            div[i].style.background=colurs[i];
+        }
+        let  last =colurs.pop();
+
+        colurs.unshift(last);
+    },500)
+
+
+
+</script>
 </body>
 </html>
