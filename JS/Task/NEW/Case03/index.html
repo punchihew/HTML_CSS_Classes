@@ -36,7 +36,9 @@
     let txt=document.querySelector("#txt");
 
     let interval;
+
     startBtn.addEventListener("click",function (){
+
 
         interval = setInterval(function(){
             display.innerText=parseInt(display.innerText)+1;
@@ -53,6 +55,7 @@
     });
 
     StopBtn.addEventListener("click",function (){
+        interval = true
         clearInterval(interval);
     });
 
